@@ -46,15 +46,14 @@ public class Main {
 		int count = 1;
 		
 		// 勝敗がつくまで無限ループ
+		Human human;
+		Monster monster;
 		while (true) {
 
 			System.out.printf("\n★ 第%d回戦 ==========\n", count);
 
 			System.out.println("\n[人間のターン！]\n");
 			
-			Human human;
-			Monster monster;
-
 			// 人間グループから1人選択
 			human = choiceHuman(humans);
 			
