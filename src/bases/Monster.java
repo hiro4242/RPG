@@ -3,7 +3,7 @@ package bases;
 import utils.Dice;
 
 //モンスターを表現する抽象クラス
-abstract class Monster extends Living {
+public abstract class Monster extends Living {
 	// コンストラクタ
 	public Monster(String name , String  weapon) {
 		super(name, weapon);

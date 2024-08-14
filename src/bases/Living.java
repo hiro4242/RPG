@@ -1,6 +1,6 @@
 package bases;
 
-abstract class Living {
+public abstract class Living {
 	protected String name ;
 	protected String weapon ;
 	protected int hp ;
@@ -11,7 +11,7 @@ abstract class Living {
 		this.weapon = weapon;		
 	}
 	
-	public abstract void attack();
+	public abstract void attack(Living target);
 	
 	
 	public String getName(){
@@ -42,5 +42,7 @@ abstract class Living {
 		}
 		return String.format("[名前]: %s, [ヒットポイント]: %d, [攻撃力]: %d %s", this.name, this.hp, this.offensive, alert);
 	}
+
+
 }
 
